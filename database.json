@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "name": "vikas",
+      "email": "vikas@gmail.com",
+      "password": "vikas123",
+      "joinedAt": "7/4/2026, 10:25:14 am"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD1775537724912",
+      "user": "vikas",
+      "email": "vikas@gmail.com",
+      "items": [
+        {
+          "id": 2,
+          "name": "Smart Watch",
+          "price": 2499,
+          "category": "electronics",
+          "emoji": "⌚",
+          "qty": 1
+        }
+      ],
+      "total": 2499,
+      "date": "4/7/2026, 10:25:24 AM",
+      "status": "Confirmed"
+    }
+  ]
+}

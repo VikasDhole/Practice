@@ -1,0 +1,136 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #222; }
+
+/* NAVBAR */
+.navbar {
+  background: #1a4fba; display: flex; align-items: center;
+  gap: 12px; padding: 12px 24px; position: sticky; top: 0; z-index: 100;
+}
+.logo { color: white; font-size: 1.3rem; font-weight: 700; white-space: nowrap; }
+.search {
+  flex: 1; padding: 8px 16px; border-radius: 8px;
+  border: none; font-size: 0.95rem;
+}
+.nav-links { display: flex; gap: 8px; }
+.nav-links a {
+  color: white; text-decoration: none; font-size: 0.88rem;
+  white-space: nowrap; padding: 6px 12px; border-radius: 8px;
+  transition: background 0.2s;
+}
+.nav-links a:hover { background: rgba(255,255,255,0.2); }
+
+/* HERO */
+.hero { background: linear-gradient(135deg, #1a4fba, #2d6be4); padding: 60px 40px; color: white; }
+.badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin-bottom: 16px; }
+.hero h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 12px; }
+.yellow { color: #fbbf24; }
+.hero p { font-size: 1rem; opacity: 0.85; margin-bottom: 24px; max-width: 500px; }
+.btn-primary {
+  background: white; color: #1a4fba; border: none;
+  padding: 12px 28px; border-radius: 8px; font-size: 1rem;
+  font-weight: 600; cursor: pointer; transition: transform 0.2s;
+}
+.btn-primary:hover { transform: scale(1.04); }
+.stats { display: flex; gap: 32px; margin-top: 24px; }
+.stats div { display: flex; flex-direction: column; }
+.stats strong { font-size: 1.4rem; }
+.stats span { font-size: 0.8rem; opacity: 0.7; }
+
+/* FEATURES */
+.features {
+  display: flex; justify-content: space-around;
+  background: white; padding: 16px 24px;
+  font-size: 0.9rem; color: #444; border-bottom: 1px solid #eee;
+}
+
+/* CATEGORIES */
+.categories { display: flex; gap: 10px; padding: 20px 24px; flex-wrap: wrap; }
+.cat-btn {
+  padding: 8px 18px; border-radius: 20px; border: 1.5px solid #ccc;
+  background: white; cursor: pointer; font-size: 0.9rem; transition: all 0.2s;
+}
+.cat-btn.active, .cat-btn:hover { background: #1a4fba; color: white; border-color: #1a4fba; }
+
+/* PRODUCTS */
+.product-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; padding: 10px 24px 40px;
+}
+.product-card {
+  background: white; border-radius: 12px; padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); transition: transform 0.2s;
+}
+.product-card:hover { transform: translateY(-4px); }
+.product-card .emoji { font-size: 2.5rem; text-align: center; margin-bottom: 10px; }
+.product-card h3 { font-size: 0.95rem; margin-bottom: 4px; }
+.product-card .price { color: #1a4fba; font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; }
+.product-card .category { font-size: 0.75rem; color: #999; margin-bottom: 12px; }
+.product-card button {
+  width: 100%; padding: 8px; background: #1a4fba; color: white;
+  border: none; border-radius: 8px; cursor: pointer; font-size: 0.9rem;
+}
+.product-card button:hover { background: #1540a0; }
+
+/* PAGE CONTAINER */
+.page-container { max-width: 700px; margin: 40px auto; padding: 0 24px; }
+.page-container h2 { font-size: 1.5rem; margin-bottom: 20px; }
+
+/* CART */
+.cart-item {
+  background: white; border-radius: 10px; padding: 14px 18px;
+  margin-bottom: 12px; display: flex; justify-content: space-between;
+  align-items: center; box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.cart-item button { background: #ff4444; color: white; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+#cart-total { font-size: 1.2rem; font-weight: 700; margin: 16px 0; }
+
+/* ORDERS */
+.order-card {
+  background: white; border-radius: 10px; padding: 16px;
+  margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  line-height: 1.7;
+}
+.order-card .order-id { font-size: 0.8rem; color: #999; }
+.order-status {
+  display: inline-block; padding: 3px 10px; border-radius: 20px;
+  font-size: 0.8rem; background: #d1fae5; color: #065f46; margin-top: 6px;
+}
+
+/* LOGIN FORM */
+.form-box { background: white; border-radius: 14px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); }
+.form-box input {
+  width: 100%; padding: 10px 14px; border: 1.5px solid #ddd;
+  border-radius: 8px; font-size: 0.95rem; margin-bottom: 12px; display: block;
+}
+.form-box input:focus { outline: none; border-color: #1a4fba; }
+#login-msg { margin-top: 10px; font-size: 0.9rem; }
+
+/* ADMIN */
+.admin-stats { display: flex; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+.stat-card {
+  background: white; border-radius: 12px; padding: 20px 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); text-align: center;
+  font-size: 1rem; flex: 1; min-width: 120px;
+}
+.stat-card strong { font-size: 1.5rem; display: block; color: #1a4fba; }
+.stat-card small { color: #888; font-size: 0.85rem; }
+.db-table {
+  width: 100%; border-collapse: collapse; background: white;
+  border-radius: 10px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); font-size: 0.9rem;
+}
+.db-table th {
+  background: #1a4fba; color: white; padding: 10px 14px; text-align: left; font-weight: 600;
+}
+.db-table td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
+.db-table tr:last-child td { border-bottom: none; }
+.db-table tr:hover td { background: #f8f9ff; }
+.admin-stats + h3, h3 { color: #333; font-size: 1.1rem; margin-bottom: 10px; }
+
+/* TOAST */
+#toast {
+  position: fixed; bottom: 30px; right: 30px;
+  background: #1a4fba; color: white; padding: 12px 22px;
+  border-radius: 10px; font-size: 0.9rem; display: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 999;
+}
