@@ -5,6 +5,12 @@
       "email": "vikas@gmail.com",
       "password": "vikas123",
       "joinedAt": "7/4/2026, 10:25:14 am"
+    },
+    {
+      "name": "pratik",
+      "email": "pratil@gmail.com",
+      "password": "pratik123",
+      "joinedAt": "7/4/2026, 10:28:41 am"
     }
   ],
   "orders": [
@@ -24,6 +30,24 @@
       ],
       "total": 2499,
       "date": "4/7/2026, 10:25:24 AM",
+      "status": "Confirmed"
+    },
+    {
+      "id": "ORD1775537928718",
+      "user": "pratik",
+      "email": "pratil@gmail.com",
+      "items": [
+        {
+          "id": 1,
+          "name": "Wireless Headphones",
+          "price": 1299,
+          "category": "electronics",
+          "emoji": "🎧",
+          "qty": 1
+        }
+      ],
+      "total": 1299,
+      "date": "4/7/2026, 10:28:48 AM",
       "status": "Confirmed"
     }
   ]
